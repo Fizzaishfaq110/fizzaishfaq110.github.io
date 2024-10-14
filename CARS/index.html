@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>CARS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cars Database</h1>
+    </header>
+    <div id="content">
+        <div class="form-wrap">
+            <h2>Information</h2>
+            <form id="form">
+                <label for="licensePlate">License Plate*</label>
+                <input id="licensePlate" type="text" placeholder="Enter car's license plate here" required><br><br>
+
+                <label for="maker">Maker*</label>
+                <input id="maker" type="text" placeholder="Enter car's maker here" required><br><br>
+
+                <label for="model">Model*</label>
+                <input id="model" type="text" placeholder="Enter car's model here" required><br><br>
+
+                <label for="owner">Current Owner*</label>
+                <input id="owner" type="text" placeholder="Enter owner's name here" required><br><br>
+
+                <label for="price">Price*</label>
+                <input id="price" type="number" placeholder="Enter car's price in euros here" required><br><br>
+
+                <label for="year">Year*</label>
+                <input id="year" type="number" placeholder="Enter car's manufacturing year here" required><br><br>
+
+                <label for="color">Color</label>
+                <input id="color" type="color" value="#ffffff"><br><br>
+
+                <!-- <p>All labels marked with * are required</p> -->
+                <div id="error"></div> <br><br>
+
+                <button type="submit">Add Car</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </div>
+        <div id="searchDiv">
+            <h2>Search Car</h2>
+            <label for="licensePlate">License Plate</label>
+            <input type="text" id="searchLicensePlate" placeholder="Enter car's license plate here" required><br><br>
+            <button onclick="searchCar()">Search</button>
+
+            <div id="searchResult"></div>
+        </div>
+    </div>
+    <div id="tableDiv">
+        <h2>Car List</h2>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>License Plate</th>
+                    <th>Maker</th>
+                    <th>Model</th>
+                    <th>Owner</th>
+                    <th>Price</th>
+                    <th>Year</th>
+                    <th>Color</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

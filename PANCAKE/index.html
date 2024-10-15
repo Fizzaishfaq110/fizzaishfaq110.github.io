@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancake Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="pancake.jpg" alt="Pancakes with blurberries" />
+            <div class="price-banner"><span id="totalPrice">$5</span></div>
+        </div>
+        <div class="form-container">
+            <h2>Customize Your Pancake</h2>
+            <div class="customization-section">
+                <label for="type">Choose your pancake type:</label>
+                <select id="type">
+                    <option value="5">Classic - $5</option>
+                    <option value="6">Chocolate - $6</option>
+                    <option value="7">Blueberry - $7</option>
+                </select>
+            </div>
+            <div class="customization-section">
+                <p>Select your toppings ($1 each):</p>
+                <input type="checkbox" id="nuts" value="1" />Nuts<br />
+                <input type="checkbox" id="bananas" value="1" />Bananas<br />
+                <input type="checkbox" id="syrup" value="1" />Syrup<br />
+            </div>
+            <div class="customization-section">
+                <p>Add extras:</p>
+                <input type="checkbox" id="whippedCream" value="2" />Whipped Cream - $2<br />
+                <input type="checkbox" id="iceCream" value="3" />Ice Cream - $3<br />
+            </div>
+            <div class="customization-section">
+                <p>Delivery Method:</p>
+                <input type="radio" name="delivery" id="eatIn" value="0" checked />Eat In<br />
+                <input type="radio" name="delivery" id="pickUp" value="0" />Pick Up<br />
+                <input type="radio" name="delivery" id="delivery" value="5" />Delivery - $5<br />
+            </div>
+            <div class="customization-section">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" placeholder="Enter your name" />
+            </div>
+            <button id="seeOrder">See Order</button>
+            <div id="orderSummary" class="order-summary" style="display: none;">
+                <h3>Order Summary</h3>
+                <p id="summaryDetails"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

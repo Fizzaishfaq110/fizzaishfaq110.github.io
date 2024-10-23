@@ -1,0 +1,50 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 7px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img.four-gridcells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+}
+
+img.wider-images {
+    grid-column: span 2 / auto;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* this will change the grid layout to single column */
+    div.gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* this will reset the grid placement properties for 
+    the images (four grid) */
+    img.four-grid-cells {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    /* this will reset the grid placement properties for 
+    the images (spanning two grid columns)  */
+    img.wide-image {
+        grid-column: auto;
+    }
+
+}

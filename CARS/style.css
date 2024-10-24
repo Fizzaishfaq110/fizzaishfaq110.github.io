@@ -144,9 +144,9 @@ button:hover,
 
 #content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    gap: 10px;
+    gap: 13px;
 
 }
 

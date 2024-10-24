@@ -15,6 +15,7 @@ body {
 header {
     background: #1a055e;
     text-align: center;
+    padding: 1rem;
 
 }
 
@@ -53,7 +54,7 @@ nav a {
 main {
     background: #6a72a7;
     color: #202758;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
 }
 
 img {

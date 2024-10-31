@@ -536,6 +536,16 @@ footer {
 
     #navsec {
         margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 0;
+        position: fixed;
+        top: 0;
+        background-color: #54061b7e;
+        z-index: 1;
+        backdrop-filter: blur(7px);
+
     }
 
     #navbar.open {
@@ -580,7 +590,7 @@ footer {
     }
 
     #about_me p {
-        width: 350px;
+        width: 330px;
         margin: 4px;
         margin-left: 10px;
         padding-left: 5px;
@@ -646,5 +656,10 @@ footer {
 
     #backTop {
         width: 20%;
+    }
+
+    nav #navbar.hidden {
+        width: 68px;
+
     }
 }

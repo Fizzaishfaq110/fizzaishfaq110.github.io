@@ -510,10 +510,6 @@ footer {
 
     }
 
-    section {
-        overflow-x: hidden;
-    }
-
     .hero-text h1 {
         font-size: 40px;
         font-weight: 600;

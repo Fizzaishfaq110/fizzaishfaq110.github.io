@@ -435,7 +435,7 @@ footer {
         font-size: small;
     }
 
-    div.skills {
+    /* div.skills {
         flex: 3;
         display: flex;
         flex-wrap: wrap;
@@ -443,6 +443,16 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         height: 500px;
+
+    } */
+    div.skills {
+        flex: 3;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1500px;
 
     }
 
@@ -487,7 +497,7 @@ footer {
 
 /* MOBILE */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
     .mobile {
         display: block;
         width: fit-content;
@@ -497,6 +507,11 @@ footer {
     body,
     section {
         margin: 5px;
+
+    }
+
+    section {
+        overflow-x: hidden;
     }
 
     .hero-text h1 {
@@ -512,7 +527,7 @@ footer {
         display: block;
         background-color: rgb(110, 90, 62);
         color: #333;
-        position: absolute;
+        position: static;
         width: 100%;
         left: 0;
 
@@ -575,11 +590,11 @@ footer {
     div.skills {
         flex: 3;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        height: 750px;
+        height: 1000px;
 
     }
 
@@ -617,5 +632,9 @@ footer {
 
     #contact-form {
         display: flex;
+    }
+
+    #backTop {
+        width: 20%;
     }
 }

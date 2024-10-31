@@ -389,7 +389,7 @@ footer {
 
     ul.responsive li {
         display: block;
-        margin: 2rem 1rem;
+        margin: 0.5rem 1rem;
     }
 
     #projects {
@@ -520,7 +520,7 @@ footer {
 
     ul.responsive li {
         display: block;
-        margin: 0.6rem 1rem;
+        margin: 0.5rem 1rem;
     }
 
     #navsec {

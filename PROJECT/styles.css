@@ -579,6 +579,14 @@ footer {
         justify-content: center;
     }
 
+    #about_me p {
+        width: 350px;
+        margin: 4px;
+        margin-left: 10px;
+        padding-left: 5px;
+        font-size: x-small;
+    }
+
     #backTop {
         font-size: small;
     }
@@ -619,6 +627,12 @@ footer {
         height: 30px;
         border-radius: 5px;
 
+    }
+
+    #about_me img {
+        max-width: 350px;
+        height: 310px;
+        align-self: center;
     }
 
     button.mobile {

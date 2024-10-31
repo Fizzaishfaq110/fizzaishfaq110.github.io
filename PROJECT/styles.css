@@ -523,7 +523,7 @@ footer {
         display: block;
         background-color: rgb(110, 90, 62);
         color: #333;
-        position: static;
+        position: absolute;
         width: 100%;
         left: 0;
 
